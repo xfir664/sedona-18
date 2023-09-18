@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Alexey Krivoy](https://up.htmlacademy.ru/htmlcss/38/user/2298933).
-* Наставник: `Неизвестно`.
+- Студент: [Alexey Krivoy](https://up.htmlacademy.ru/htmlcss/38/user/2298933).
+- Наставник: `Анна Лисененкова`. (https://htmlacademy.ru/profile/ankhena).
 
 ---
 
