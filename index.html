@@ -6,39 +6,58 @@
   </head>
   <body>
     <header class="main-header" data-test="header">
-      <p class="header-logo">
-        <img src="#" alt="Логотип сайта SEDONA" class="header-logo-img" />
-      </p>
       <nav class="main-header-navigation">
-        <ul class="main-navigation-list">
-          <li class="main-navigation-item">
-            <a class="main-navigation-link active-navigation-link" href="#"
+        <p class="main-header-logo">
+          <a class="main-header-logo-link" href="#">
+            <img
+              class="main-header-logo-img"
+              src="#"
+              alt="Логотип сайта SEDONA"
+            />
+          </a>
+        </p>
+        <ul class="main-header-navigation-list">
+          <li class="main-header-navigation-item">
+            <a
+              class="main-header-navigation-link active-navigation-link"
+              href="#"
               >Главная</a
             >
           </li>
-          <li class="main-navigation-item">
-            <a class="main-navigation-link" href="#">О седоне</a>
+          <li class="main-header-navigation-item">
+            <a class="main-header-navigation-link" href="#">О седоне</a>
           </li>
-          <li class="main-navigation-item">
-            <a class="main-navigation-link" href="#">Гостиницы</a>
+          <li class="main-header-navigation-item">
+            <a class="main-header-navigation-link" href="catalog.html"
+              >Гостиницы</a
+            >
           </li>
         </ul>
       </nav>
-      <p class="button-content">
-        <a class="search-link" href="#"
-          ><span class="visually-hidden">Поиск</span></a
-        >
-        <a class="favorites-link" href="#">
-          <span class="visually-hidden">Избранное</span>
-          <span class="favorites-number">12</span>
-        </a>
-        <a class="want-here-link" href="#">Хочу сюда!</a>
+      <ul class="main-header-navigation-user-list">
+        <li class="main-header-navigation-user-item">
+          <a class="main-header-navigation-user-link-search" href="#"
+            ><span class="visually-hidden">Поиск</span></a
+          >
+        </li>
+        <li class="main-header-navigation-user-item">
+          <a class="main-header-navigation-user-link-favorite" href="#"
+            ><span class="visually-hidden">Избранное</span
+            ><span class="favorites-number">12</span></a
+          >
+        </li>
+      </ul>
+      <p class="main-header-want-here-button">
+        <a class="main-header-want-here-link" href="#">Хочу сюда!</a>
       </p>
     </header>
     <main class="main-content" data-test="main">
       <section class="hero" data-test="hero">
-        <h1 class="visually-hidden">Главная страница Sedona</h1>
-        <img class="hero-img" src="#" alt="#" />
+        <h1 class="visually-hidden">Главная страница города Sedona</h1>
+        <img class="hero-img" src="#" aria-hidden="true" alt="" />
+        <span class="visually-hidden"
+          >Welcome to the gorgeous Sedona, because the grand Canyon sucks!</span
+        >
         <p class="hero-lead">
           Седона — небольшой городок в Аризоне, заслуживающий большего!
         </p>

@@ -6,33 +6,47 @@
   </head>
   <body>
     <header class="main-header" data-test="header">
-      <p class="header-logo">
-        <img class="header-logo-img" src="#" alt="Логотип сайта SEDONA" />
-      </p>
       <nav class="main-header-navigation">
-        <ul class="main-navigation-list">
-          <li class="main-navigation-item">
-            <a class="main-navigation-link active-navigation-link" href="#"
-              >Главная</a
+        <p class="main-header-logo">
+          <a class="main-header-logo-link" href="index.html">
+            <img
+              class="main-header-logo-img"
+              src="#"
+              alt="Логотип сайта города SEDONA"
+            />
+          </a>
+        </p>
+        <ul class="main-header-navigation-list">
+          <li class="main-header-navigation-item">
+            <a class="main-header-navigation-link" href="index.html">Главная</a>
+          </li>
+          <li class="main-header-navigation-item">
+            <a class="main-header-navigation-link" href="#">О седоне</a>
+          </li>
+          <li class="main-header-navigation-item">
+            <a
+              class="main-header-navigation-link active-navigation-link"
+              href="#"
+              >Гостиницы</a
             >
-          </li>
-          <li class="main-navigation-item">
-            <a class="main-navigation-link" href="#">О седоне</a>
-          </li>
-          <li class="main-navigation-item">
-            <a class="main-navigation-link" href="#">Гостиницы</a>
           </li>
         </ul>
       </nav>
-      <p class="button-content">
-        <a class="search-link" href="#"
-          ><span class="visually-hidden">Поиск</span></a
-        >
-        <a class="favorites-link" href="#">
-          <span class="visually-hidden">Избранное</span>
-          <span class="favorites-number">12</span>
-        </a>
-        <a class="want-here-link" href="#">Хочу сюда!</a>
+      <ul class="main-header-navigation-user-list">
+        <li class="main-header-navigation-user-item">
+          <a class="main-header-navigation-user-link-search" href="#"
+            ><span class="visually-hidden">Поиск</span></a
+          >
+        </li>
+        <li class="main-header-navigation-user-item">
+          <a class="main-header-navigation-user-link-favorite" href="#"
+            ><span class="visually-hidden">Избранное</span
+            ><span class="favorites-number">12</span></a
+          >
+        </li>
+      </ul>
+      <p class="main-header-want-here-button">
+        <a class="main-header-want-here-link" href="#">Хочу сюда!</a>
       </p>
     </header>
     <main class="main-content" data-test="main">
