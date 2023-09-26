@@ -53,15 +53,12 @@
       <h1 class="visually-hidden">Страница каталога Sedona</h1>
       <section class="filter" data-test="filter">
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
-        <h3 class="filter-title">Гостиницы Седоны</h3>
+        <p class="filter-lead">Гостиницы Седоны</p>
         <ul class="filter-navigation-list">
           <li class="filter-navigation-item">
-            <a href="#" class="filter-navigation-link"
+            <a class="filter-navigation-link" href="#"
               ><span class="visually-hidden">Главная</span></a
             >
-          </li>
-          <li class="filter-navigation-item">
-            <span class="visually-hidden">Стрелочка в право</span>
           </li>
           <li class="filter-navigation-item">
             <a class="filter-navigation-link" href="#">Гостиницы</a>
@@ -185,19 +182,19 @@
               Сначала дорогое
             </option>
           </select>
-          <ul class="catalog-view-buttons">
-            <li class="catalog-view-button">
-              <button class="catalog-view-button-grid" type="button">
+          <ul class="catalog-view-layouts">
+            <li class="catalog-view-layouts">
+              <button class="catalog-view-layouts-grid" type="button">
                 <span class="visually-hidden">Плитка</span>
               </button>
             </li>
-            <li class="catalog-view-button">
-              <button class="catalog-view-button-slide" type="button">
+            <li class="catalog-view-layouts">
+              <button class="catalog-view-layouts-slider" type="button">
                 <span class="visually-hidden">Cлайд</span>
               </button>
             </li>
-            <li class="catalog-view-button">
-              <button class="catalog-view-button-list" type="button">
+            <li class="catalog-view-layouts">
+              <button class="catalog-view-layouts-list" type="button">
                 <span class="visually-hidden">Список</span>
               </button>
             </li>
@@ -205,8 +202,16 @@
         </header>
         <ul class="catalog-list">
           <li class="catalog-item">
-            <img class="catalog-item-img" src="#" alt="#" />
-            <h3 class="catalog-item-title">Amara Resort & Spa</h3>
+            <a class="catalog-item-img-link" href="#">
+              <img
+                class="catalog-item-img"
+                src="#"
+                alt="Звездное небо между гор"
+              />
+            </a>
+            <a class="catalog-item-title-link" href="#">
+              <h3 class="catalog-item-title">Amara Resort & Spa</h3>
+            </a>
             <p class="catalog-price">
               <span class="catalog-price-description">Гостиница</span>
               <span class="catalog-price-value">От 4000 ₽</span>
@@ -218,13 +223,17 @@
               >
             </p>
             <p class="catalog-item-rating">
-              <span class="catalog-rating-stars four-stars">4-звезды</span>
+              <span class="catalog-rating-stars four-stars"></span>
               <span class="catalog-rating-value">Рейтинг: 8,5</span>
             </p>
           </li>
           <li class="catalog-item">
-            <img class="catalog-item-img" src="#" alt="#" />
-            <h3 class="catalog-item-title">Villas at Poco Diablo</h3>
+            <a class="catalog-item-img-link" href="#">
+              <img class="catalog-item-img" src="#" alt="Радуга над горой" />
+            </a>
+            <a class="catalog-item-title-link" href="#">
+              <h3 class="catalog-item-title">Villas at Poco Diablo</h3>
+            </a>
             <p class="catalog-price">
               <span class="catalog-price-description">Гостиница</span>
               <span class="catalog-price-value">От 5000 ₽</span>
@@ -234,13 +243,21 @@
               <a class="catalog-item-link-favorite" href="#">в избранное</a>
             </p>
             <p class="catalog-item-rating">
-              <span class="catalog-rating-stars four-stars">4-звезды</span>
+              <span class="catalog-rating-stars four-stars"></span>
               <span class="catalog-rating-value">Рейтинг: 9,2</span>
             </p>
           </li>
           <li class="catalog-item">
-            <img class="catalog-item-img" src="#" alt="#" />
-            <h3 class="catalog-item-title">Desert Quail Inn</h3>
+            <a class="catalog-item-img-link" href="#">
+              <img
+                class="catalog-item-img"
+                src="#"
+                alt="Горы на фоне рассвета"
+              />
+            </a>
+            <a class="catalog-item-title-link" href="#">
+              <h3 class="catalog-item-title">Desert Quail Inn</h3>
+            </a>
             <p class="catalog-price">
               <span class="catalog-price-description">Гостиница</span>
               <span class="catalog-price-value">От 2500 ₽</span>
@@ -250,13 +267,21 @@
               <a class="catalog-item-link-favorite" href="#">в избранное</a>
             </p>
             <p class="catalog-item-rating">
-              <span class="catalog-rating-stars three-stars">3-звезды</span>
+              <span class="catalog-rating-stars three-stars"></span>
               <span class="catalog-rating-value">Рейтинг: 6,9</span>
             </p>
           </li>
           <li class="catalog-item">
-            <img class="catalog-item-img" src="#" alt="#" />
-            <h3 class="catalog-item-title">GreenTree Inn</h3>
+            <a class="catalog-item-img-link" href="#">
+              <img
+                class="catalog-item-img"
+                src="#"
+                alt="Гора над ночным небом"
+              />
+            </a>
+            <a class="catalog-item-title-link" href="#">
+              <h3 class="catalog-item-title">GreenTree Inn</h3>
+            </a>
             <p class="catalog-price">
               <span class="catalog-price-description">Гостиница</span>
               <span class="catalog-price-value">От 1500 ₽</span>
@@ -266,7 +291,7 @@
               <a class="catalog-item-link-favorite" href="#">в избранное</a>
             </p>
             <p class="catalog-item-rating">
-              <span class="catalog-rating-stars two-stars">2-звезды</span>
+              <span class="catalog-rating-stars two-stars"></span>
               <span class="catalog-rating-value">Рейтинг: 5,0</span>
             </p>
           </li>
@@ -285,9 +310,13 @@
             <a class="catalog-pagination-link" href="#">4</a>
           </li>
           <li class="catalog-pagination-item">
-            <a class="catalog-pagination-link paginatior-hide-link" href="#"
-              >...</a
+            <a
+              class="catalog-pagination-link paginatior-hide-link"
+              href="#"
+              aria-hidden="true"
             >
+              ...
+            </a>
           </li>
           <li class="catalog-pagination-item">
             <a class="catalog-pagination-link" href="#">10</a>
@@ -322,31 +351,33 @@
       </section>
     </main>
     <footer class="main-footer" data-test="footer">
-      <ul class="footer-social-list">
-        <li class="social-list-item">
-          <a class="social-list-link" href="#"
+      <ul class="main-footer-social-list">
+        <li class="main-footer-social-list-item">
+          <a class="main-footer-social-list-link" href="#"
             ><span class="visually-hidden">VK</span></a
           >
         </li>
-        <li class="social-list-item">
-          <a class="social-list-link" href="#"
+        <li class="main-footer-social-list-item">
+          <a class="main-footer-social-list-link" href="#"
             ><span class="visually-hidden">Telegram</span></a
           >
         </li>
-        <li class="social-list-item">
-          <a class="social-list-link" href="#"
+        <li class="main-footer-social-list-item">
+          <a class="main-footer-social-list-link" href="#"
             ><span class="visually-hidden">Youtube</span></a
           >
         </li>
       </ul>
-      <p class="footer-phone">
-        <a class="footer-phone-link" href="tel:+78128121212"
+      <p class="main-footer-phone">
+        <a class="main-footer-phone-link" href="tel:+78128121212"
           >+7 (812) 812-12-12</a
         >
       </p>
-      <a class="html-academy-link" href="#">
-        <img class="html-academy-img" src="#" alt="#" />
-      </a>
+      <p class="main-footer-html-academy-logo">
+        <a class="main-footer-html-academy-logo-link" href="#">
+          <img class="main-footer-html-academy-logo-img" src="#" alt="#" />
+        </a>
+      </p>
     </footer>
   </body>
 </html>
