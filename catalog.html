@@ -4,46 +4,50 @@
     <meta charset="utf-8">
     <title>HTML Academy: Каталог</title>
   </head>
-  <body>
+  <body class="page">
+    <!--Основная шапка сайта / Site main header-->
     <header class="main-header" data-test="header">
-      <nav class="main-header-navigation">
-        <p class="main-header-logo">
-          <a class="main-header-logo-link" href="index.html">
-            <img class="main-header-logo-img" src="images/header/header-sedona-logo.svg" width="140" height="70" alt="Логотип сайта города SEDONA">
+      <!--Основная навигация сайта / Site main navigation-->
+      <nav class="main-navigation">
+        <p class="main-logo">
+          <a class="main-logo-link" href="index.html">
+            <img class="main-logo-img" src="images/logos/sedona-logo.svg" width="140" height="70" alt="Логотип сайта города SEDONA">
           </a>
         </p>
-        <ul class="main-header-navigation-list">
-          <li class="main-header-navigation-item">
-            <a class="main-header-navigation-link active-navigation-link" href="index.html">Главная</a>
+        <ul class="main-navigation-list">
+          <li class="main-navigation-item">
+            <a class="main-navigation-link" href="index.html">Главная</a>
           </li>
-          <li class="main-header-navigation-item">
-            <a class="main-header-navigation-link" href="#">О седоне</a>
+          <li class="main-navigation-item">
+            <a class="main-navigation-link" href="#">О седоне</a>
           </li>
-          <li class="main-header-navigation-item">
-            <a class="main-header-navigation-link" href="#">Гостиницы</a>
+          <li class="main-navigation-item">
+            <a class="main-navigation-link  active-navigation-link" href="#">Гостиницы</a>
           </li>
         </ul>
       </nav>
-      <ul class="main-header-navigation-user-list">
-        <li class="main-header-navigation-user-item">
-          <a class="main-header-navigation-user-link-search" href="#">
+      <ul class="navigation-user-list">
+        <li class="navigation-user-item">
+          <a class="user-link-search" href="#">
             <span class="visually-hidden">Поиск</span>
           </a>
         </li>
-        <li class="main-header-navigation-user-item">
-          <a class="main-header-navigation-user-link-favorite" href="#">
+        <li class="navigation-user-item">
+          <a class="user-link-favorite" href="#">
             <span class="visually-hidden">Избранное</span>
             <span class="favorites-number">12</span>
           </a>
         </li>
       </ul>
-      <p class="main-header-want-here-button">
-        <a class="main-header-want-here-link" href="#">Хочу сюда!</a>
+      <p class="want-here">
+        <a class="want-here-link" href="#">Хочу сюда!</a>
       </p>
     </header>
     <main class="main-content" data-test="main">
+      <!--Основной заголовок / Main title -->
       <h1 class="visually-hidden">Страница каталога Sedona</h1>
       <section class="filter" data-test="filter">
+        <!--Блок с фильтром / Filter block-->
         <h2 class="visually-hidden">Фильтр гостиниц Sedona</h2>
         <p class="filter-lead">Гостиницы Седоны</p>
         <ul class="filter-navigation-list">
@@ -56,6 +60,7 @@
             <a class="filter-navigation-link" href="#" aria-current="page">Гостиницы</a>
           </li>
         </ul>
+        <!--Форма с фильтром / Filter form -->
         <form class="filter-form" action="https://echo.htmlacademy.ru/" id="filter-form" method="get">
           <fieldset class="filter-fieldset">
             <legend class="filter-fieldset-title">Инфраструктура:</legend>
@@ -104,6 +109,7 @@
         </form>
       </section>
       <section class="catalog" data-test="catalog">
+        <!--Каталог сайта / Site catalog -->
         <h2 class="visually-hidden">Каталог гостиниц города Sedona</h2>
         <header class="catalog-header">
           <p class="catalog-hostel-found">Найдено гостиниц:<span class="catalog-hostle-found-number">38</span></p>
@@ -130,10 +136,11 @@
             </li>
           </ul>
         </header>
+        <!--Каталог сайта / Site catalog-->
         <ul class="catalog-list">
           <li class="catalog-item">
             <a class="catalog-item-img-link" href="#" tabindex="-1">
-              <img class="catalog-item-img" src="images/catalog/catalog-list-amara-resort-and-spa.jpg" width="300" height="212" alt="Звездное небо между гор">
+              <img class="catalog-item-img" src="images/hostels/hostel-amara-resort-and-spa.jpg" width="300" height="212" alt="Звездное небо между гор">
             </a>
             <a class="catalog-item-title-link" href="#" tabindex="-1">
               <h3 class="catalog-item-title">Amara Resort & Spa</h3>
@@ -149,7 +156,7 @@
           </li>
           <li class="catalog-item">
             <a class="catalog-item-img-link" href="#" tabindex="-1">
-              <img class="catalog-item-img" src="images/catalog/catalog-list-villias-at-poco-diablo.jpg" width="300" height="212" alt="Радуга над горой">
+              <img class="catalog-item-img" src="images/hostels/hostel-villias-at-poco-diablo.jpg" width="300" height="212" alt="Радуга над горой">
             </a>
             <a class="catalog-item-title-link" href="#" tabindex="-1">
               <h3 class="catalog-item-title">Villas at Poco Diablo</h3>
@@ -165,7 +172,7 @@
           </li>
           <li class="catalog-item">
             <a class="catalog-item-img-link" href="#" tabindex="-1">
-              <img class="catalog-item-img" src="images/catalog/catalog-list-desert-quail-inn.jpg" width="300" height="212" alt="Горы на фоне рассвета">
+              <img class="catalog-item-img" src="images/hostels/hostel-desert-quail-inn.jpg" width="300" height="212" alt="Горы на фоне рассвета">
             </a>
             <a class="catalog-item-title-link" href="#" tabindex="-1">
               <h3 class="catalog-item-title">Desert Quail Inn</h3>
@@ -181,7 +188,7 @@
           </li>
           <li class="catalog-item">
             <a class="catalog-item-img-link" href="#" tabindex="-1">
-              <img class="catalog-item-img" src="images/catalog/catalog-list-green-tree-inn.jpg" width="300" height="212" alt="Гора над ночным небом">
+              <img class="catalog-item-img" src="images/hostels/hostel-green-tree-inn.jpg" width="300" height="212" alt="Гора над ночным небом">
             </a>
             <a class="catalog-item-title-link" href="#" tabindex="-1">
               <h3 class="catalog-item-title">GreenTree Inn</h3>
@@ -196,6 +203,7 @@
             <p class="catalog-item-rating">Рейтинг: 5,0</p>
           </li>
         </ul>
+        <!--Пагинация каталога / Catalog pagination-->
         <ul class="catalog-pagination-list">
           <li class="catalog-pagination-item">
             <a class="catalog-pagination-link pagination-active" href="#">1</a>
@@ -218,6 +226,7 @@
         </ul>
       </section>
       <section class="subscribe" data-test="subscribe">
+        <!--Блок с подпиской / Subscribe block-->
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" id="subscribe-form" method="post">
@@ -227,30 +236,31 @@
         </form>
       </section>
     </main>
+    <!--Основной подвал сайта / Site main footer-->
     <footer class="main-footer" data-test="footer">
-      <ul class="main-footer-social-list">
-        <li class="main-footer-social-list-item">
-          <a class="main-footer-social-list-link" href="https://vk.com/htmlacademy">
+      <ul class="social-list">
+        <li class="social-list-item">
+          <a class="social-list-link" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">ВКонтакте</span>
           </a>
         </li>
-        <li class="main-footer-social-list-item">
-          <a class="main-footer-social-list-link" href="https://t.me/htmlacademy ">
+        <li class="social-list-item">
+          <a class="social-list-link" href="https://t.me/htmlacademy ">
             <span class="visually-hidden">Telegram</span>
           </a>
         </li>
-        <li class="main-footer-social-list-item">
-          <a class="main-footer-social-list-link" href="https://www.youtube.com/user/htmlacademyru">
+        <li class="social-list-item">
+          <a class="social-list-link" href="https://www.youtube.com/user/htmlacademyru">
             <span class="visually-hidden">Youtube</span>
           </a>
         </li>
       </ul>
-      <p class="main-footer-phone">
-        <a class="main-footer-phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <p class="footer-phone">
+        <a class="footer-phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </p>
-      <p class="main-footer-html-academy-logo">
-        <a class="main-footer-html-academy-logo-link" href="https://htmlacademy.ru/">
-          <img class="main-footer-html-academy-logo-img" src="images/footer/footer-html-academy-logo.svg" width="115" height="33" alt="Логотип HTML-Academy">
+      <p class="html-academy-logo">
+        <a class="html-academy-logo-link" href="https://htmlacademy.ru/">
+          <img class="html-academy-logo-img" src="images/logos/html-academy-logo.svg" width="115" height="33" alt="Логотип HTML-Academy">
         </a>
       </p>
     </footer>
