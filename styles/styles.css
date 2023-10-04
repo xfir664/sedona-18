@@ -54,6 +54,25 @@ img {
   text-decoration: none;
 }
 
+.favorites-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  font-size: 10px;
+  line-height: 10px;
+  color: #ffffff;
+  background-color: #7db54f;
+  border-radius: 50%;
+}
+
+.want-here-link {
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #756157;
+}
+
 .hero {
   background-color: #83b3d3;
   background-image: url("../images/hero/hero-canyon.jpg");
