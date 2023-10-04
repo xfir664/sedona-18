@@ -67,6 +67,15 @@ img {
   border-radius: 50%;
 }
 
+.button {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #82b3d3;
+  text-transform: uppercase;
+  border-style: none;
+}
+
 .want-here-link {
   color: #ffffff;
   text-transform: uppercase;
@@ -174,15 +183,6 @@ img {
   font-size: 18px;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.6);
-}
-
-.button {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-weight: 700;
-  color: #ffffff;
-  background-color: #82b3d3;
-  text-transform: uppercase;
-  border-style: none;
 }
 
 .subscribe-submit-button {
@@ -309,8 +309,14 @@ img {
 }
 
 .catalog-add-favorite {
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #82b3d3;
+  text-transform: uppercase;
+  border-style: none;
 }
 
 .favorite-active {
