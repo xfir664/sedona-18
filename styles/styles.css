@@ -74,7 +74,7 @@ img {
   text-align: center;
 }
 
-/* Стили навигации / Navigation styles */
+/* Стили основной шапки / Page header styles */
 
 .navigation {
   box-sizing: border-box;
@@ -318,12 +318,34 @@ img {
   line-height: 36px
 }
 
+/* Стили основного подвала / Page footer styles */
+
+.page-footer-container {
+  box-sizing: border-box;
+  display: flex;
+  width: 1200px;
+  padding: 0 70px;
+  margin: 0 auto;
+}
+
+.social-list {
+  max-width: 200px;
+  margin: 0;
+  margin-right: auto;
+  padding: 0;
+}
+
 .footer-phone-link {
+  margin-right: auto;
   font-size: 40px;
   line-height: 40px;
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.htmlacademy-logo-img {
+  display: block;
 }
 
 .filter {
