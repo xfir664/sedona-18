@@ -91,6 +91,7 @@ img {
 }
 
 .navigation-list {
+  display: flex;
   width: 450px;
   margin: 0;
   padding: 0;
@@ -101,6 +102,8 @@ img {
 }
 
 .navigation-link {
+  display: flex;
+  padding: 16px 20px;
   color:#000000;
   text-decoration: none;
 }
@@ -108,6 +111,12 @@ img {
 .navigation-user-list {
   max-width: 320px;
   margin-left: auto;
+}
+
+.navigation-user-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .favorites-number {
@@ -124,15 +133,22 @@ img {
 }
 
 .user-favorite-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: url("../images/users-icon/favorite-icon.svg");
-  background-size: 100% auto;
+  background-position: center;
+  background-size: 18px 17px;
   background-repeat: no-repeat;
 }
 
 .want-here-link {
+  padding: 8px 34px;
+  font-family: inherit;
   color: #ffffff;
   text-transform: uppercase;
   background-color: #756157;
+  border-radius: 4px;
 }
 
 /* Стили основного содержимого / Main styles */
@@ -149,9 +165,12 @@ img {
 /* Стили блока героя / Hero block styles */
 
 .hero {
+  padding-top: 51px;
+  padding-bottom: 82px;
   background-color: rgba(131, 179, 211, 0.5);
-  background-image: url("../images/hero/hero-canyon.jpg");
-  background-size: 100% auto;
+  background-image: url("../images/decorative/zigzag.svg"), url("../images/hero/hero-canyon.jpg");
+  background-position: bottom, center;
+  background-size: 100% auto, cover;
   background-repeat: no-repeat;
 }
 
@@ -261,16 +280,17 @@ img {
 /* Стили блока поиска / Search block styles  */
 
 .search-container {
+  display: flex;
+  flex-direction: column;
   width: 592px;
   margin: 0 auto;
 }
 
 .hostel-search-link {
   box-sizing: border-box;
-  display: block;
-  width: 376px;
   margin: 0 auto;
   padding: 0 50px;
+  font-family: inherit;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -312,6 +332,10 @@ img {
   font-size: 18px;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.6);
+}
+
+.form-subscribe-input {
+  font-family: inherit;
 }
 
 .subscribe-submit-button {
@@ -405,6 +429,7 @@ img {
 }
 
 .filter-minmax-price {
+  font-family: inherit;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -504,7 +529,12 @@ img {
   text-transform: uppercase;
 }
 
+.catalog-img {
+  display: block;
+}
+
 .catalog-more-link {
+  font-family: inherit;
   color: #ffffff;
   background-color: #756157;
   text-decoration: none;
@@ -540,7 +570,6 @@ img {
 
 .catalog-pagination-list {
   display: flex;
-  max-width: 680px;
   gap: 8px;
   margin: 0;
   padding: 0;
