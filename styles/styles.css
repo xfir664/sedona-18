@@ -16,6 +16,8 @@
   font-display: swap;
 }
 
+/* Общие стили / General styles */
+
 html {
   height: 100%;
 }
@@ -23,6 +25,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
+  min-height: 100%;
   margin: 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 22px;
@@ -58,6 +61,21 @@ img {
   border-style: none;
 }
 
+.title-lead {
+  text-align: center;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.description-lead{
+  text-align: center;
+}
+
+/* Стили навигации / Navigation styles */
+
 .navigation {
   box-sizing: border-box;
   display: flex;
@@ -75,6 +93,7 @@ img {
   width: 450px;
   margin: 0;
   padding: 0;
+  list-style: none;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -115,9 +134,18 @@ img {
   background-color: #756157;
 }
 
+/* Стили основного содержимого / Main styles */
+
 .main-container {
   flex-grow: 1;
 }
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto
+}
+
+/* Стили блока героя / Hero block styles */
 
 .hero {
   background-color: rgba(131, 179, 211, 0.5);
@@ -126,21 +154,30 @@ img {
   background-repeat: no-repeat;
 }
 
-.title-lead {
-  text-align: center;
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: 700;
-  color: #000000;
-  text-transform: uppercase;
+.hero-img {
+  display: block;
+  margin: 0 auto;
 }
 
-.description-lead{
-  text-align: center;
+/* Стили блока преймуществ / Advantages block styles */
+
+.advantages-title-container {
+  width: 651px;
+  margin: 0 auto;
 }
 
 .advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   text-align: center;
+}
+
+.advantages-list-item {
+  box-sizing: border-box;
+  width: 400px;
 }
 
 .advantages-list-item:nth-child(even) {
@@ -163,6 +200,20 @@ img {
   line-height: 21px;
 }
 
+.advantages-list-img {
+  display: block;
+}
+
+.advantages-item-lead {
+  display: flex;
+  width: 1200px;
+}
+
+.advantages-list-container {
+  width: 230px;
+  margin: 0 auto;
+}
+
 .advantages-list-item.advantages-item-lead {
   color: #ffffff;
   background-color:#82b3d3;
@@ -172,12 +223,27 @@ img {
   color: #ffffff;
 }
 
+.features-title-container {
+  width: 505px;
+  margin: 0 auto;
+}
+
 .features-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   text-align: center;
 }
 
 .features-list-item:nth-child(odd) {
   background-color: rgba(131, 179, 211, 0.12);
+}
+
+.features-list-item {
+  box-sizing: border-box;
+  width: 400px;
+  padding: 0 85px;
 }
 
 .features-list-title {
