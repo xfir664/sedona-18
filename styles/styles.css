@@ -257,14 +257,39 @@ img {
   line-height: 21px;
 }
 
+/* Стили блока поиска / Search block styles  */
+
+.search-container {
+  width: 592px;
+  margin: 0 auto;
+}
+
 .hostel-search-link {
+  box-sizing: border-box;
+  display: block;
+  width: 376px;
+  margin: 0 auto;
+  padding: 0 50px;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
   color: #ffffff;
   background-color: #756157;
+  text-transform: uppercase;
   text-decoration: none;
   border-style: none;
+}
+
+/* Стили блока подписки / Subscribe block styles */
+
+.subscribe-container {
+  width: 684px;
+  margin: 0 auto;
+}
+
+.subscribe-title-container {
+  width: 475px;
+  margin: 0 auto;
 }
 
 .subscribe.blurred {
