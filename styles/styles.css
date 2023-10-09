@@ -16,7 +16,14 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 22px;
   line-height: 26px;
@@ -42,8 +49,32 @@ img {
   overflow: hidden;
 }
 
+.button {
+  font-family: inherit;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #82b3d3;
+  text-transform: uppercase;
+  border-style: none;
+}
+
+.navigation {
+  box-sizing: border-box;
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 70px;
+}
+
+.logo-img {
+  display: block;
+  margin-right: 30px;
+}
+
 .navigation-list {
-  text-align: center;
+  width: 450px;
+  margin: 0;
+  padding: 0;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -52,6 +83,11 @@ img {
 .navigation-link {
   color:#000000;
   text-decoration: none;
+}
+
+.navigation-user-list {
+  max-width: 320px;
+  margin-left: auto;
 }
 
 .favorites-number {
@@ -67,19 +103,20 @@ img {
   border-radius: 50%;
 }
 
-.button {
-  font-family: inherit;
-  font-weight: 700;
-  color: #ffffff;
-  background-color: #82b3d3;
-  text-transform: uppercase;
-  border-style: none;
+.user-favorite-link{
+  background-image: url("../images/users-icon/favorite-icon.svg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
 .want-here-link {
   color: #ffffff;
   text-transform: uppercase;
   background-color: #756157;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .hero {
