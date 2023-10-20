@@ -569,7 +569,12 @@ img {
   border-radius: 4px;
 }
 
+.form-button-container {
+  text-align: center;
+}
+
 .form-reset-button {
+  padding: 8px;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
@@ -631,6 +636,26 @@ img {
   text-decoration: none;
 }
 
+.catalog-view-grid {
+  background-image: url("../images/view-layouts-icon/view-layouts-grid-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.catalog-view-slider {
+  background-image: url("../images/view-layouts-icon/view-layouts-slider-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.catalog-view-list {
+  background-image: url("../images/view-layouts-icon/view-layouts-list-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .active-layouts {
   border-color: #000000;
 }
@@ -676,7 +701,7 @@ img {
 
 .catalog-list-grid .catalog-item-container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: repeat(2, auto);
   gap: 16px 20px;
 }
 
