@@ -122,11 +122,22 @@ img {
 }
 
 .navigation-link {
+  position: relative;
   display: block;
   margin: 0 auto;
   padding: 20px 16px;
   color: #000000;
   text-decoration: none;
+}
+
+.active-navigation-link::before {
+  content: "";
+  position: absolute;
+  right: 16px;
+  bottom: -1px;
+  left: 16px;
+  height: 2px;
+  background-color: #756257;
 }
 
 .navigation-user-list {
@@ -491,6 +502,7 @@ img {
 }
 
 .form-email-label {
+  position: absolute;
   padding: 14px 20px;
   font-size: 18px;
   line-height: 24px;
@@ -498,8 +510,8 @@ img {
 }
 
 .form-subscribe-input {
-  flex-grow: 1;
   box-sizing: border-box;
+  flex-grow: 1;
   padding: 14px 20px;
   font-family: inherit;
   font-size: 18px;
@@ -507,6 +519,18 @@ img {
   background-color: #f2f2f2;
   border-style: none;
   border-radius: 4px 0 0 4px;
+}
+
+.form-subscribe-input::placeholder {
+  opacity: 0;
+}
+
+.form-subscribe-input:focus::placeholder {
+  opacity: 1;
+}
+
+.form-subscribe-input:focus + .form-email-label {
+  display: none;
 }
 
 .subscribe-submit-button {
@@ -571,7 +595,25 @@ img {
   line-height: 21px;
 }
 
+.filter-navigation-item:not(:last-child) {
+  position: relative;
+  margin-right: 28px;
+}
+
+.filter-navigation-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  min-width: 6px;
+  min-height: 10px;
+  top: 5px;
+  left: 24px;
+  background-image: url("../images/decorative/arrow-icon-right.svg");
+  background-size: 6px 10px;
+  background-repeat: no-repeat;
+}
+
 .filter-navigation-link {
+  position: relative;
   color: #ffffff;
   text-decoration: none;
 }
@@ -580,27 +622,11 @@ img {
   display: block;
   min-width: 12px;
   min-height: 12px;
-  margin-right: 28px;
   padding: 3px 0;
   background-image: url("../images/navigation-icon/home-house-icon.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 12px 12px;
-}
-
-.filter-main-link::after {
-  content: "";
-  position: relative;
-  top: 2px;
-  left: 20px;
-  display: block;
-  padding: 5px 0;
-  background-image: url("../images/decorative/arrow-icon-right.svg");
-  background-size: 8px;
-  background-position: center;
-  background-repeat: no-repeat;
-  cursor: default;
-  pointer-events: none;
 }
 
 .filter-form {
@@ -1057,6 +1083,21 @@ img {
   background-color: #ffffff;
 }
 
+.pagination-hide-link:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.pagination-hide-link:focus {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.pagination-hide-link:active {
+  color: #000000;
+  background-color: #ffffff;
+}
+
 /* Стили основного подвала / Page footer styles */
 
 .page-footer-container {
@@ -1119,7 +1160,18 @@ img {
   color: rgba(117, 97, 87, 0.3);
 }
 
-.htmlacademy-logo-img {
-  display: block;
-  width: 115px;
+.htmlacademy-logo-icon {
+  fill: #000000;
+}
+
+.htmlacademy-logo-icon:hover {
+  fill: #756157;
+}
+
+.htmlacademy-logo-icon:focus {
+  fill: #756157;
+}
+
+.htmlacademy-logo-icon:active {
+  fill: rgba(117, 97, 87, 0.3);
 }
