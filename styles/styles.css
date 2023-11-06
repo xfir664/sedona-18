@@ -1430,6 +1430,7 @@ img {
 }
 
 .modal-search-label {
+  display: inline-block;
   padding: 12px 0;
   font-size: 20px;
   font-weight: 700;
@@ -1502,6 +1503,11 @@ img {
 
 .modal-field-kids {
   gap: 46px;
+}
+
+.form-label-icon .modal-search-label {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .value-button-container {
@@ -1615,4 +1621,75 @@ img {
   border: 0;
   pointer-events: none;
   cursor: default;
+}
+
+/* Стили тултипа / Tooltip styles */
+
+.form-label-icon {
+  position: relative;
+  padding-right: 36px;
+}
+
+.tooltip {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  margin-top: -1px;
+  margin-left: 10px;
+}
+
+.tooltip-toggle {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+.tooltip-icon {
+  width: 100%;
+  height: 100%;
+  fill: #83b3d3;
+}
+
+.tooltip-toggle:hover .tooltip-icon {
+  fill: #68a2ca;
+}
+
+.tooltip-text {
+  position: absolute;
+  top: 100%;
+  right: 50%;
+  transform: translateX(50%);
+  box-sizing: border-box;
+  display: none;
+  width: 256px;
+  margin-top: 15px;
+  padding-top: 20px;
+  padding-right: 18px;
+  padding-bottom: 23px;
+  padding-left: 22px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  text-transform: none;
+  color: #ffffff;
+  background-color: #333333;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.30);
+}
+
+.tooltip-text::before {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  width: 19px;
+  height: 9px;
+  margin: 0 auto;
+  background-image: url("../images/modal-icon/tooltip-arrow.svg");
+  content: "";
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
 }
