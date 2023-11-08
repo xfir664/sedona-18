@@ -75,15 +75,6 @@ img {
   cursor: pointer;
 }
 
-/*Отключение кнопки / Disabled button */
-
-.button-disabled {
-  background-color: #e5e5e5;
-  border: 0;
-  pointer-events: none;
-  cursor: default;
-}
-
 /*Стили заголовка / Title style*/
 
 .title {
@@ -678,13 +669,16 @@ img {
   color: #ffffff;
 }
 
-.filter-breadcrumbs-link:hover,
+.filter-breadcrumbs-link:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .filter-breadcrumbs-link:focus {
-  color: #756157;
+  color: #ffffff;
 }
 
 .filter-breadcrumbs-link:active {
-  color: rgba(117, 97, 87, 0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .filter-breadcrumbs-main {
@@ -763,11 +757,6 @@ img {
   background-position: 4px 6px;
   background-size: 13px 10px;
   background-repeat: no-repeat;
-  outline: 2px solid #83b3d3;
-}
-
-.filter-chekbox[type="checkbox"]:focus {
-  outline: 3px solid #83b3d3;
 }
 
 .filter-radio-list {
@@ -803,10 +792,6 @@ img {
   content: "";
 }
 
-.filter-radio[type="radio"]:checked + .filter-radio-mark {
-  outline: 2px solid #83b3d3;
-}
-
 .filter-radio-item:not(:last-child) {
   margin-bottom: 16px;
 }
@@ -823,6 +808,22 @@ img {
 .filter-chekbox-item:active,
 .filter-radio-item:active {
   opacity: 0.3;
+}
+
+.filter-radio[type="radio"]:disabled + .filter-radio-mark {
+  background-color: #e5e5e5;
+  border: 0;
+  opacity: 0.6;
+  pointer-events: none;
+  cursor: default;
+}
+
+.filter-chekbox[type="checkbox"]:disabled {
+  background-color: #e5e5e5;
+  border: 0;
+  opacity: 0.6;
+  pointer-events: none;
+  cursor: default;
 }
 
 .filter-label-description {
@@ -921,9 +922,15 @@ img {
   cursor: pointer;
 }
 
-.range-toggle:focus,
 .range-toggle:active {
   outline: 2px solid #83b3d3;
+}
+
+.range-toggle:disabled {
+  background-color: #e5e5e5;
+  border: 0;
+  pointer-events: none;
+  cursor: default;
 }
 
 .toggle-min {
@@ -1043,14 +1050,10 @@ img {
   cursor: pointer;
 }
 
-.catalog-select-controls:hover,
-.catalog-select-controls:focus {
+.catalog-select-controls:hover {
   border-color: #68a2ca;
 }
 
-.catalog-select-controls:focus {
-  outline: #68a2ca;
-}
 
 .catalog-select-controls:disabled {
   -webkit-appearance: none;
@@ -1607,12 +1610,12 @@ img {
 }
 
 .search-adults-input {
+  z-index: 1;
   box-sizing: border-box;
   max-width: 30px;
   line-height: 20px;
   text-align: center;
   border-radius: 0;
-  outline: transparent;
   -webkit-appearance: textfield;
   appearance: textfield;
 }
@@ -1624,12 +1627,12 @@ img {
 }
 
 .search-kids-input {
+  z-index: 1;
   box-sizing: border-box;
   max-width: 30px;
   line-height: 20px;
   text-align: center;
   border-radius: 0;
-  outline: transparent;
   -webkit-appearance: textfield;
   appearance: textfield;
 }
@@ -1766,6 +1769,7 @@ img {
 
 .tooltip-text {
   position: absolute;
+  z-index: 2;
   top: 100%;
   right: 50%;
   transform: translateX(50%);
@@ -1810,4 +1814,13 @@ img {
 
 .tooltip-toggle:disabled + .tooltip-text {
   display: none;
+}
+
+/*Отключение кнопки / Disabled button */
+
+.button-disabled {
+  background-color: #e5e5e5;
+  border: 0;
+  pointer-events: none;
+  cursor: default;
 }
