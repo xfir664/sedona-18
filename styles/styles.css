@@ -240,7 +240,6 @@ img {
 /* Стили блока героя / Hero block styles */
 
 .hero {
-  margin-bottom: 69px;
   padding: 51px 371px 82px;
   background-color: rgba(131, 179, 211, 0.5);
   background-image: url("../images/decorative/zigzag.svg"), url("../images/hero/hero-canyon.jpg");
@@ -255,8 +254,12 @@ img {
 
 /*Стили блока преймуществ / Advantages style */
 
+.advantages {
+  padding-top: 69px;
+}
+
 .advantages-text-container {
-  max-width: 655px;
+  max-width: 660px;
   margin: 0 auto;
   margin-bottom: 90px;
   text-align: center;
@@ -268,6 +271,7 @@ img {
 }
 
 .advantages-description {
+  max-width: 660px;
   margin: 10px 0;
 }
 
@@ -275,7 +279,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-bottom: 64px;
   padding: 0;
   list-style: none;
 }
@@ -346,6 +349,10 @@ img {
 
 /* Стили блока услуг / Service styles */
 
+.service {
+  padding-top: 64px;
+}
+
 .service-text-container {
   max-width: 505px;
   margin: 0 auto;
@@ -366,7 +373,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-bottom: 96px;
   padding: 0;
   list-style: none;
 }
@@ -444,6 +450,10 @@ img {
 
 /* Стили блока поиска гостиниц / Search styles */
 
+.search {
+  padding-top: 96px;
+}
+
 .search-text-container {
   max-width: 592px;
   margin: 0 auto;
@@ -487,6 +497,10 @@ img {
 
 /* Стили блока подписки / Subscribe styles */
 
+.subscribe {
+  padding-top: 96px;
+}
+
 .subscribe-blured {
   background-color: rgba(131, 179, 211, 0.5);
   background-image: url("../images/blurry/canyon-subscribe-blur.jpg");
@@ -497,7 +511,7 @@ img {
 
 .subscribe-text-container {
   max-width: 684px;
-  padding: 96px 258px 104px;
+  padding: 0 258px 104px;
   text-align: center;
 }
 
@@ -604,7 +618,6 @@ img {
 /* Стили фильтра / Filter style */
 
 .filter {
-  margin-bottom: 50px;
   padding: 70px;
   padding-top: 35px;
 }
@@ -639,7 +652,7 @@ img {
 }
 
 .filter-breadcrumbs-item:not(:last-child) {
-  margin-right: 28px;
+  margin-right: 29px;
 }
 
 .filter-breadcrumbs-item:not(:first-child)::before {
@@ -675,11 +688,11 @@ img {
 }
 
 .filter-breadcrumbs-main {
-  width: 13px;
-  height: 15px;
-  padding: 3px 0;
+  width: 12px;
+  height: 12px;
+  margin-top: 4px;
   background-image: url("../images/navigation-icon/home-house-icon.svg");
-  background-position: center 3px;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -983,8 +996,7 @@ img {
 /* Стили блока каталога / Catalog styles */
 
 .catalog {
-  margin-bottom: 60px;
-  padding: 0 70px;
+  padding: 50px 70px 60px;
 }
 
 .catalog-header {
@@ -1161,7 +1173,7 @@ img {
 }
 
 .catalog-list-grid .catalog-more-link {
-  padding: 8px 26px;
+  padding: 8px 10px;
   text-align: center;
   font-size: 16px;
   line-height: 20px;
@@ -1169,19 +1181,19 @@ img {
 }
 
 .catalog-list-grid .catalog-add-favorite {
-  padding: 8px 20px;
+  padding: 8px 10px;
   font-size: 16px;
   line-height: 20px;
 }
 
 .catalog-list-grid .favorite-active {
-  padding: 8px 18px;
+  padding: 8px 10px;
   background-color: #7db54f;
 }
 
 .catalog-list-grid .catalog-item-rating {
   margin: 0;
-  padding: 9px 22px 8px 23px;
+  padding: 9px 10px 8px;
   text-align: center;
   font-size: 16px;
   line-height: 20px;
@@ -1394,6 +1406,7 @@ img {
 
 .modal-container {
   position: fixed;
+  z-index: 1;
   top: 0;
   left: 0;
   display: flex;
