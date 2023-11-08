@@ -1667,6 +1667,7 @@ img {
   fill: #000000;
 }
 
+.value-button:active .value-button-icon,
 .value-button-icon:active {
   opacity: 0.3;
   outline: transparent;
