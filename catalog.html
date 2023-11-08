@@ -7,9 +7,8 @@
     <title>HTML Academy: Каталог</title>
   </head>
   <body class="page">
-
     <div class="page-container">
-
+      <!-- Шапка сайта / Page header -->
       <header class="page-header" data-test="header">
         <nav class="page-navigation">
           <p class="main-logo">
@@ -44,10 +43,10 @@
           <a class="navigation-user-button button" href="#">Хочу сюда!</a>
         </nav>
       </header>
-
+      <!-- Основное содержимое / Main content -->
       <main class="main-catalog main-container" data-test="main">
         <h1 class="visually-hidden">Страница каталога сайта Седона</h1>
-
+        <!-- Блок фильтра / Filter block -->
         <section class="filter filter-blured" data-test="filter">
           <h2 class="visually-hidden">Блок фильтра каталога</h2>
           <p class="filter-title">Гостиницы Седоны</p>
@@ -137,7 +136,7 @@
             </div>
           </form>
         </section>
-
+        <!-- Блок каталога / Catalog block -->
         <section class="catalog" data-test="catalog">
           <h2 class="visually-hidden">Каталог сайта Седона</h2>
           <header class="catalog-header">
@@ -254,7 +253,7 @@
             </li>
           </ul>
         </section>
-
+        <!-- Блок подписки / Subscribe block -->
         <section class="subscribe" data-test="subscribe">
           <div class="subscribe-text-container">
             <h2 class="subscribe-title title">Подпишитесь на рассылку</h2>
@@ -266,9 +265,8 @@
           </form>
           </div>
         </section>
-
       </main>
-
+      <!-- Подвал сайта / Page footer -->
       <footer class="page-footer" data-test="footer">
         <div class="footer-container">
           <ul class="footer-social-list">
@@ -306,7 +304,91 @@
           </a>
         </div>
       </footer>
-
+    </div>
+    <!-- Модальное окно -->
+    <div class="modal-container modal-container-close" data-test="modal">
+      <div class="modal modal-search">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="modal-search-form" action="https://echo.htmlacademy.ru/" id="modal-search-form" method="post">
+            <div class="modal-search-field modal-field-date">
+              <label class="modal-search-label search-label-entry" for="search-input-entry">Дата заезда:</label>
+              <div class="modal-input-container">
+                <input class="modal-search-input search-input-entry" type="text" name="search-input-entry" id="search-input-entry" placeholder="Укажите дату" value="27 апреля 2020" required>
+                <svg class="calendar-date-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="none" viewBox="0 0 16 15" aria-hidden="true" focusable="false">
+                  <path d="M5.75 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z"/>
+                  <path d="M15 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h14v7ZM1 6V3h2v2h1V3h8v2h1V3h2v3H1Z"/>
+                  <path d="M8 10c.3 0 .5-.2.5-.5S8.3 9 8 9s-.5.2-.5.5.2.5.5.5ZM10.25 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.75 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10.25 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/>
+                </svg>
+              </div>
+              <span class="search-field-massage search-massage-error">Мы не можем отправить вас в прошлое.</span>
+            </div>
+            <div class="modal-search-field modal-field-date">
+              <label class="modal-search-label search-label-exit" for="search-input-exit">Дата выезда:</label>
+              <div class="modal-input-container">
+                <input class="modal-search-input search-input-exit" type="text" name="search-input-exit" id="search-input-exit" placeholder="Укажите дату" value="1 сентября 2023" required>
+                <svg class="calendar-date-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="none" viewBox="0 0 16 15" aria-hidden="true" focusable="false">
+                  <path d="M5.75 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z"/>
+                  <path d="M15 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h14v7ZM1 6V3h2v2h1V3h8v2h1V3h2v3H1Z"/>
+                  <path d="M8 10c.3 0 .5-.2.5-.5S8.3 9 8 9s-.5.2-.5.5.2.5.5.5ZM10.25 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.75 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10.25 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/>
+                </svg>
+              </div>
+              <span class="search-field-massage">На эти даты есть свободные номера. Пока есть.</span>
+            </div>
+            <div class="modal-search-container">
+              <div class="modal-search-field modal-field-adults">
+                <label class="modal-search-label search-label-adults" for="search-input-adults">Взрослые:</label>
+                <div class="value-button-container">
+                  <button class="value-button value-button-minus button" type="button" tabindex="-1">
+                    <svg class="value-button-icon minus-button-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="2" fill="none" viewBox="0 0 14 2" aria-hidden="true" focusable="false" tabindex="0">
+                      <path d="M0 0v2h14V0H0Z"/>
+                    </svg>
+                    <span class="visually-hidden">Уменьшить</span>
+                  </button>
+                  <input class="modal-search-input search-adults-input" type="number" name="search-input-adults" id="search-input-adults" placeholder="2" value="2" min="0" max="99">
+                  <button class="value-button value-button-plus button" type="button" tabindex="-1">
+                    <svg class="value-button-icon plus-button-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14" tabindex="0">
+                      <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/></svg>
+                    <span class="visually-hidden">Увеличить</span>
+                  </button>
+                </div>
+              </div>
+              <div class="modal-search-field modal-field-kids">
+                <span class="modal-search-label form-label-icon">
+                  <label class="modal-search-label search-label-kids" for="search-input-kids">Дети:</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle button" type="button" aria-labelledby="tooltip-label-kids">
+                      <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 26 26">
+                        <circle cx="13" cy="13" r="13"/>
+                        <path fill="#fff" fill-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" clip-rule="evenodd"/>
+                      </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-kids">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+                </span>
+                <div class="value-button-container">
+                  <button class="value-button value-button-minus button" type="button" tabindex="-1">
+                    <svg class="value-button-icon minus-button-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="2" fill="none" viewBox="0 0 14 2" aria-hidden="true" focusable="false" tabindex="0">
+                      <path d="M0 0v2h14V0H0Z"/>
+                    </svg>
+                    <span class="visually-hidden">Уменьшить</span>
+                  </button>
+                  <input class="modal-search-input search-kids-input" type="number" name="search-input-kids" id="search-input-kids" placeholder="2" value="2" min="0" max="99">
+                  <button class="value-button value-button-plus button" type="button" tabindex="-1">
+                    <svg class="value-button-icon plus-button-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14" tabindex="0">
+                      <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/></svg>
+                    <span class="visually-hidden">Увеличить</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button class="modal-submit-button button" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
     </div>
   </body>
 </html>
